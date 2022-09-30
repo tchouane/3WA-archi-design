@@ -1,0 +1,146 @@
+* {
+	box-sizing: border-box; /* On spécifie que la largeur (width) de chaque boîte comprend le padding et la bordure (par défaut, c'est seulement la largeur du contenu) */
+}
+
+html {
+	font-size: 62.5%; /* 1rem = 10px (la formule est 10/16*100) la taille par défaut étant 16px */
+}
+
+body {
+	font-size: 1.6rem; /* on remets la taille du texte par défaut pour le body à 16px en utilisant les rem comme unité) */
+	color:#414141;
+	font-family: 'Nunito', sans-serif;
+	background-color: grey;
+}
+
+header, footer{
+background: #00748D url("../images/path.png") repeat-x 0 bottom
+}
+
+header nav{
+	display:flex;
+	text-align:center;
+	align-items:center;
+	justify-content:space-between;
+}
+
+.prestation{
+	display: flex;
+	flex-wrap:wrap;
+}
+
+.prestation h2{
+	width:100%;
+}
+
+.prestation article{
+	width:25%;
+	background-color:white;
+}
+
+.prestataire{
+	display:flex;
+	flex-wrap:wrap;
+	text-align:center;
+}
+
+.prestataire h2{
+	width:100%
+}
+
+.prestataire a{
+	width:25%;
+}
+
+.fa-solid{
+	background-color:orange;
+	color:white;
+	width:2em;
+	height:2em;
+}
+
+a{
+	text-decoration:none;
+}
+
+li{
+	list-style:none;
+}
+
+main div{
+	text-align:center;
+	background-image: url("../images/bg-header.jpg");
+	background-size: cover;
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+}
+
+.wrapper{
+	max-width:1200px;
+	margin:auto;
+}
+
+div p{
+	background-color: white;
+}
+
+h1,h2,h3,h4,nav,.logo strong{
+	font-family: 'Fjalla One', sans-serif;
+}
+
+h1{
+	color:white;
+	padding: 1em 2em;
+	background-color: orange;
+}
+
+
+h2{
+	width:100%;
+}
+
+.prestation arcticle{
+	width:25%;
+}
+
+p{
+	margin: 0 0 1.5rem 0;
+}
+
+ul{
+	padding:0;
+}
+
+img{
+	max-width:100%;
+	width:auto;
+	height:auto;
+}
+
+/*recupérer un logo avec la balise "content" et l'unicode du picto + à rajouter la fiche css de la font family lié au picto*/
+h3::before{
+	content:"\f02d";
+	font-family:"font awesome 6 free";
+}
+
+
+/*placer des éléments avant et après l'élément choisi*/
+h2::before, h2::after{
+	content:" - ";
+	color:red;
+}
+
+footer .wrapper{
+	display:flex;
+	justify-content:space-between;
+}
+
+.reseaux a{
+	color:#fff;
+}
+
+.fa-solid .fa-rss{
+	color:#fff;
+	background-color: #00748D;
+}
